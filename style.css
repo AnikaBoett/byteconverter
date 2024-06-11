@@ -1,0 +1,46 @@
+* {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+body {
+    margin: 100px;
+}
+
+h2 {
+    font-size: 15px;
+    font-weight: 100;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    border-radius: 10%;
+}
+
+input {
+    padding: 15px;
+}
+
+.box-1 {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.box-2 {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}

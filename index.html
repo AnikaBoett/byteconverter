@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width-device-width", initial-scale="1.0"> 
+        <link rel="stylesheet" href="style.css"> 
+        <title>Welcome Message</title>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    </head>
+
+    <body>
+        <div id="app">
+            <h1>Storage Units Converter</h1>
+            <div id="container">
+                <div class="box-1">
+                    <h2>Kilobytes (kB) to Bytes (B)</h2>
+                    <input type="text" placeholder="Kilobytes..." v-model="inputKilo">
+                    <br>
+                    <button v-on:click = 'KToB()'>Convert to B</button>
+                    <p> {{B_amount}} </p>
+                </div>  
+                
+                <div class="box-2">
+                    <h2>Bytes to Megabits (Mb)</h2>
+                    <input type="text" placeholder="Bytes..." v-model="inputBytes">
+                    <br>
+                    <button v-on:click = 'BToMB()'>Convert to MB</button>
+                    <p> {{Mb_amount}} </p>
+                </div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
